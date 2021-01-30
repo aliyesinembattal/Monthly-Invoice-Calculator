@@ -2,6 +2,8 @@ const results = document.getElementById("results");
 const submitBtn = document.getElementById("submit-btn");
 const loading = document.getElementById("loading");
 
+loading.style.display = "none";
+
 document.getElementById("bill-form").addEventListener("submit", (e) => {
   //Hide results
   results.style.display = "none";
@@ -27,7 +29,7 @@ function calculateResults() {
   const monthly = principal + principal1 + principal2;
 
   if (isFinite(monthly)) {
-    monthlyPayment.value = monthly.toFixed(3).toString() + " $";
+    monthlyPayment.textContent = monthly.toFixed(3).toString() + " $";
 
     results.style.display = "block";
     submitBtn.disabled = false;

@@ -24,3 +24,24 @@ hr.rounded {
   border-top: 8px solid #1c4c6d;
   border-radius: 5px;
 }
+
+.input {
+  background-color: rgb(27, 31, 37);
+  color: #fff;
+}
+
+.bill-control {
+  width: 60%;
+  border: none;
+  border-bottom: 2px solid rgb(27, 31, 37);
+  padding-left: 10px;
+}
+
+.input-group-text.input {
+  border-radius: 5px !important
+  ;
+}
+
+#monthly-payment {
+  font-size: 40px;
+}

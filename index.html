@@ -26,9 +26,9 @@
             <form id="bill-form">
               <div class="bill-group">
                 <div class="input-group mb-4">
-                  <span class="input-group-text" style="padding-right: 37px;">Electricity $</span>
+                  <span class="input-group-text input" style="padding-right: 37px;">Electricity $</span>
                   <input
-                    type="number"
+                    type="text"
                     class="bill-control"
                     aria-label="Amount (to the nearest dollar)"
                     id="electricity"
@@ -38,9 +38,9 @@
               </div>
               <div class="bill-group">
                 <div class="input-group mb-4">
-                  <span class="input-group-text" style="padding-right: 63px;">Water $</span>
+                  <span class="input-group-text input" style="padding-right: 63px;">Water $</span>
                   <input
-                    type="number"
+                    type="text"
                     class="bill-control"
                     aria-label="Amount (to the nearest dollar)"
                     id="water"
@@ -50,9 +50,9 @@
               </div>
               <div class="bill-group">
                 <div class="input-group mb-4">
-                  <span class="input-group-text" style="padding-right: 20px;">Natural Gas $</span>
+                  <span class="input-group-text input" style="padding-right: 20px;">Natural Gas $</span>
                   <input
-                    type="number"
+                    type="text"
                     class="bill-control"
                     aria-label="Amount (to the nearest dollar)"
                     id="naturalgas"
@@ -72,60 +72,97 @@
             <div id="my-alert"></div>
             <p></p>
           <div id="loading">
-            <div class="loadingio-spinner-wedges-szjqf5h8bpi"><div class="ldio-8ze5k4xzczr">
-              <div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div></div>
+            <div class="loadingio-spinner-double-ring-mcghz13jnqm"><div class="ldio-ubziuroj87">
+              <div></div>
+              <div></div>
+              <div><div></div></div>
+              <div><div></div></div>
               </div></div>
               <style type="text/css">
-              @keyframes ldio-8ze5k4xzczr {
-                0% { transform: rotate(0deg) }
+              @keyframes ldio-ubziuroj87 {
+                0% { transform: rotate(0) }
                 100% { transform: rotate(360deg) }
               }
-              .ldio-8ze5k4xzczr > div > div {
-                transform-origin: 100px 100px;
-                animation: ldio-8ze5k4xzczr 3.0303030303030303s linear infinite;
-                opacity: 0.8
-              }
-              .ldio-8ze5k4xzczr > div > div > div {
+              .ldio-ubziuroj87 div { box-sizing: border-box!important }
+              .ldio-ubziuroj87 > div {
                 position: absolute;
+                width: 144px;
+                height: 144px;
+                top: 28px;
+                left: 28px;
+                border-radius: 50%;
+                border: 16px solid #000;
+                border-color: #0a0a0a transparent #0a0a0a transparent;
+                animation: ldio-ubziuroj87 1s linear infinite;
+              }
+              
+              .ldio-ubziuroj87 > div:nth-child(2), .ldio-ubziuroj87 > div:nth-child(4) {
+                width: 108px;
+                height: 108px;
+                top: 46px;
+                left: 46px;
+                animation: ldio-ubziuroj87 1s linear infinite reverse;
+              }
+              .ldio-ubziuroj87 > div:nth-child(2) {
+                border-color: transparent #28292f transparent #28292f
+              }
+              .ldio-ubziuroj87 > div:nth-child(3) { border-color: transparent }
+              .ldio-ubziuroj87 > div:nth-child(3) div {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                transform: rotate(45deg);
+              }
+              .ldio-ubziuroj87 > div:nth-child(3) div:before, .ldio-ubziuroj87 > div:nth-child(3) div:after { 
+                content: "";
+                display: block;
+                position: absolute;
+                width: 16px;
+                height: 16px;
+                top: -16px;
+                left: 48px;
+                background: #0a0a0a;
+                border-radius: 50%;
+                box-shadow: 0 128px 0 0 #0a0a0a;
+              }
+              .ldio-ubziuroj87 > div:nth-child(3) div:after {
+                left: -16px;
+                top: 48px;
+                box-shadow: 128px 0 0 0 #0a0a0a;
+              }
+              
+              .ldio-ubziuroj87 > div:nth-child(4) { border-color: transparent; }
+              .ldio-ubziuroj87 > div:nth-child(4) div {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                transform: rotate(45deg);
+              }
+              .ldio-ubziuroj87 > div:nth-child(4) div:before, .ldio-ubziuroj87 > div:nth-child(4) div:after {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 16px;
+                height: 16px;
+                top: -16px;
                 left: 30px;
+                background: #28292f;
+                border-radius: 50%;
+                box-shadow: 0 92px 0 0 #28292f;
+              }
+              .ldio-ubziuroj87 > div:nth-child(4) div:after {
+                left: -16px;
                 top: 30px;
-                width: 70px;
-                height: 70px;
-                border-radius: 70px 0 0 0;
-                transform-origin: 100px 100px
-              }.ldio-8ze5k4xzczr > div div:nth-child(1) {
-                animation-duration: 0.7575757575757576s
+                box-shadow: 92px 0 0 0 #28292f;
               }
-              .ldio-8ze5k4xzczr > div div:nth-child(1) > div {
-                background: #93dbe9;
-                transform: rotate(0deg);
-              }.ldio-8ze5k4xzczr > div div:nth-child(2) {
-                animation-duration: 1.0101010101010102s
-              }
-              .ldio-8ze5k4xzczr > div div:nth-child(2) > div {
-                background: #447499;
-                transform: rotate(0deg);
-              }.ldio-8ze5k4xzczr > div div:nth-child(3) {
-                animation-duration: 1.5151515151515151s
-              }
-              .ldio-8ze5k4xzczr > div div:nth-child(3) > div {
-                background: #5e6fa3;
-                transform: rotate(0deg);
-              }.ldio-8ze5k4xzczr > div div:nth-child(4) {
-                animation-duration: 3.0303030303030303s
-              }
-              .ldio-8ze5k4xzczr > div div:nth-child(4) > div {
-                background: #3b4368;
-                transform: rotate(0deg);
-              }
-              .loadingio-spinner-wedges-szjqf5h8bpi {
+              .loadingio-spinner-double-ring-mcghz13jnqm {
                 width: 200px;
                 height: 200px;
                 display: inline-block;
                 overflow: hidden;
                 background: #ffffff;
               }
-              .ldio-8ze5k4xzczr {
+              .ldio-ubziuroj87 {
                 width: 100%;
                 height: 100%;
                 position: relative;
@@ -133,25 +170,20 @@
                 backface-visibility: hidden;
                 transform-origin: 0 0; /* see note above */
               }
-              .ldio-8ze5k4xzczr div { box-sizing: content-box; }
+              .ldio-ubziuroj87 div { box-sizing: content-box; }
               /* generated by https://loading.io/ */
               </style>
           </div>
           <hr class = "rounded">
             <!--RESULTS-->
             <div class="pt-4" id="results">
-              <h5 id="result">Result</h5>
+              <h5 id="result">Monthly Payment</h5>
               <ul></ul>
               <div class="bill-group">
-                <div class="input-group mb-4">
-                  <span class="input-group-text">Monthly Payment</span>
-                  <input
-                    type="text"
-                    class="bill-control"
-                    id="monthly-payment"
-                    disabled
-                  />
-                </div>
+                <p id="monthly-payment"></p>
+                  
+                  
+                
               </div>
       </div>
     </div>
