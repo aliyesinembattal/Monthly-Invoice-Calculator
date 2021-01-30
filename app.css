@@ -1,0 +1,26 @@
+.heading::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f1ec";
+  padding: 15px;
+}
+#submit-btn {
+  font-weight: bold;
+  font-size: 20px;
+}
+#submit-btn:hover {
+  background-color: #1c4c6d !important;
+}
+
+h5 {
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+#results {
+  display: none;
+}
+
+hr.rounded {
+  border-top: 8px solid #1c4c6d;
+  border-radius: 5px;
+}
